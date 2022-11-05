@@ -1,4 +1,4 @@
-version: "v-beta"
+version: "v-gamma"
 services:
   reverseproxy:
       image: reverseproxy
