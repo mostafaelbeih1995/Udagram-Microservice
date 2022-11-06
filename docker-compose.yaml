@@ -1,4 +1,4 @@
-version: "v-gamma"
+version: "preprod3"
 services:
   reverseproxy:
       image: reverseproxy
