@@ -1,20 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  labels:
+    service: reverseproxy
   name: reverseproxy
 spec:
   selector:
     matchLabels:
-      run: reverseproxy
+      service: reverseproxy
   replicas: 2
   template:
     metadata:
       labels:
-        run: reverseproxy
-    spec:
+        service: reverseproxy
+    spec: 
       containers:
       - name: reverseproxy
-        image: docker.io/mostafaelbeih1995/reverseproxy
+        image: mostafaelbeih1995/reverseproxy
         ports:
         - containerPort: 80
         resources:
