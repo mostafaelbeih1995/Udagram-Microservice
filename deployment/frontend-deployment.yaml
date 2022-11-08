@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: mostafaelbeih1995/udagram-frontend
+        image: mostafaelbeih1995/udagram-frontend:local
         ports: 
         - containerPort: 80
         resources:
