@@ -1,4 +1,4 @@
-FROM node:16.18.0-alpine
+FROM node:12
 # Create app directory
 WORKDIR /usr/src/app
 # Install app dependencies
