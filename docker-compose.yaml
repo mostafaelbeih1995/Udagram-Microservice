@@ -6,8 +6,8 @@ services:
           - 8080:8080
       restart: always
       depends_on:
-        - backend-user
-        - backend-feed
+        - backend_user
+        - backend_feed
   backend-user:
     image: udagram-api-user
     environment:
@@ -35,6 +35,6 @@ services:
       JWT_SECRET: $JWT_SECRET
       URL: $URL
   frontend:
-    image: udagram-frontend:local
+    image: udagram-frontend
     ports:
       - "8100:80"
